@@ -1,12 +1,11 @@
 import re, unicodedata
-from lists import greek_capitals, greek_lowers, greek_special_cases, greek_accents, greek_punctuation
+from parser import convert_to_beta
+from greek_lists import greek_capitals, greek_lowers, greek_special_cases, greek_accents, greek_punctuation
 
-unicode_to_beta = {v: k for k, v in {**greek_capitals, **greek_lowers, **greek_accents, **greek_special_cases, **greek_punctuation}.items()}
+greek_unicode_to_beta = {v: k for k, v in {**greek_capitals, **greek_lowers, **greek_accents, **greek_special_cases, **greek_punctuation}.items()}
 
 def greek_to_beta(text):
-    normalized = unicodedata.normalize('NFD', text)  # Decompose accents
-    out = [unicode_to_beta.get(ord(c), c) for c in normalized]  # Map each char
-    return "".join(out)
+    return convert_to_beta(text, greek_unicode_to_beta)
 
 def beta_to_greek(text):
     # Handle final sigma case

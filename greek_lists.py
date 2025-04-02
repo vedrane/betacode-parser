@@ -1,3 +1,4 @@
+# Greek
 greek_capitals = {
     "*A": 0x0391,  # Α (Alpha)
     "*B": 0x0392,  # Β (Beta)
