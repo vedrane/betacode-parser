@@ -23,5 +23,5 @@ def beta_to_coptic(text):
             out.append(char)
         i += 1
 
-    # Normalize to compose accents properly
-    return unicodedata.normalize('NFC', ''.join(out))
+    # Return
+    return out
