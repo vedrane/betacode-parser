@@ -8,14 +8,14 @@ old_heb_special_unicode_to_beta = {v: k for k, v in {**old_hebrew_special_cases}
 
 diacritics_include = {'\u05C1', '\u05C2'}
 
-def remove_diacritics(text):
+def _remove_diacritics(text):
     return ''.join(
         c for c in unicodedata.normalize('NFKD', text)
         if not (unicodedata.combining(c) and c not in diacritics_include)
     )
 
 def hebrew_to_beta(text, old=False):
-    text = remove_diacritics(text)
+    text = _remove_diacritics(text)
     
     if old:
         text = convert_to_beta(text, old_heb_unicode_to_beta)

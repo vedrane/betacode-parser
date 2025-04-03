@@ -75,4 +75,5 @@ greek_accents = {
 
 greek_punctuation = {
     ":": 0x00B7,  # ·  (Middle Dot)
+    "#": 0x0374,  # ʹ  (Numerical Sign)
 }
