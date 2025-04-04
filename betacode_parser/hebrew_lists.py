@@ -1,5 +1,5 @@
 # Hebrew (TLG Modern)
-hebrew_alphabet = {
+_hebrew_alphabet = {
     "A": 0x05D0, # א (Alef)
     "a": 0x05E2, # ע (Ayin)
     "b": 0x05D1, # ב (Bet)
@@ -19,7 +19,7 @@ hebrew_alphabet = {
     "z": 0x05D6, # ז (Zayin)
 }
 
-hebrew_special_cases = {
+_hebrew_special_cases = {
     "k1": 0x05DB, # כ (Kaf)
     "k2": 0x05DA, # ך (Final Kaf)
     "m1": 0x05DE, # מ (Mem)
@@ -33,7 +33,7 @@ hebrew_special_cases = {
 }
 
 # Hebrew (CCAT/CATSS/TLG)
-old_hebrew_alphabet = {
+_old_hebrew_alphabet = {
     ")": 0x05D0,  # א (Alef)
     "B": 0x05D1,  # ב (Bet)
     "G": 0x05D2,  # ג (Gimel)
@@ -60,7 +60,7 @@ old_hebrew_alphabet = {
     "T": 0x05EA   # ת (Taw)
 }
 
-old_hebrew_special_cases = {
+_old_hebrew_special_cases = {
     "K": 0x05DA, # ך (Final Kaf)
     "M": 0x05DD, # ם (Final Mem)
     "N": 0x05DF, # ן (Final Nun)

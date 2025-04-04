@@ -1,5 +1,5 @@
 # Coptic
-coptic_capitals = {
+_coptic_capitals = {
     "*A": 0x2C80,  # Ⲁ (Alfa)
     "*B": 0x2C82,  # Ⲃ (Vida)
     "*C": 0x2C9C,  # Ⲝ (Ksi)
@@ -33,7 +33,7 @@ coptic_capitals = {
     "*Z": 0x2C8C,  # Ⲍ (Zata)
 }
 
-coptic_lowers = {
+_coptic_lowers = {
     "A": 0x2C81,  # ⲁ (alfa)
     "B": 0x2C83,  # ⲃ (vida)
     "C": 0x2C9D,  # ⲝ (ksi)

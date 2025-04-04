@@ -1,5 +1,5 @@
 # Greek
-greek_capitals = {
+_greek_capitals = {
     "*A": 0x0391,  # Α (Alpha)
     "*B": 0x0392,  # Β (Beta)
     "*C": 0x039E,  # Ξ (Xi)
@@ -17,8 +17,8 @@ greek_capitals = {
     "*P": 0x03A0,  # Π (Pi)
     "*Q": 0x0398,  # Θ (Theta)
     "*R": 0x03A1,  # Ρ (Rho)
-    "*S": 0x03A3,  # Σ (Sigma)
     "*S3": 0x03F9, # Ϲ (Lunate Sigma)
+    "*S": 0x03A3,  # Σ (Sigma)
     "*T": 0x03A4,  # Τ (Tau)
     "*U": 0x03A5,  # Υ (Upsilon)
     "*V": 0x03DC,  # Ϝ (Digamma)
@@ -28,7 +28,7 @@ greek_capitals = {
     "*Z": 0x0396,  # Ζ (Zeta)
 }
 
-greek_lowers = {
+_greek_lowers = {
     "A": 0x03B1,   # α (alpha)
     "B": 0x03B2,   # β (beta)
     "C": 0x03BE,   # ξ (xi)
@@ -56,13 +56,13 @@ greek_lowers = {
     "Z": 0x03B6,   # ζ (zeta)
 }
 
-greek_special_cases = {
+_greek_special_cases = {
     "S1": 0x03C3,  # σ (Medial Sigma)
     "S2": 0x03C2,  # ς (Final Sigma)
     "S3": 0x03F2,  # ϲ (Lunate Sigma)
 }
 
-greek_accents = {
+_greek_accents = {
     "\\": 0x0300, # ◌̀  (Grave)
     "/": 0x0301,  # ◌́  (Acute)
     "+": 0x0308,  # ◌̈  (Diaeresis)
@@ -73,7 +73,7 @@ greek_accents = {
     "|": 0x0345,  # ◌ͅ  (Iota Subscript)
 }
 
-greek_punctuation = {
+_greek_punctuation = {
     ":": 0x00B7,  # ·  (Middle Dot)
     "#": 0x0374,  # ʹ  (Numerical Sign)
 }
