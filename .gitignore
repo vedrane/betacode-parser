@@ -1,2 +1,7 @@
 .vscode/*
 **/__pycache__/*
+*.pyc
+*.pkl
+build/*
+dist/*
+**.egg-info/*
