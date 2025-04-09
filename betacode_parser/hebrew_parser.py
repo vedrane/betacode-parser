@@ -36,7 +36,7 @@ def beta_to_hebrew(text, old=False):
     if old:
         for key, value in special_cases.items():
             text = _re.sub(fr'({key})(\s+)', fr'{chr(value)}\2', text)
-            text = _re.sub(fr'({key})(?=[.!?#:])', fr'{chr(value)}\2', text)
+            text = _re.sub(fr'({key})(?=[.!?#:])', fr'{chr(value)}\1', text)
     else:
         for key, value in special_cases.items():
             text = text.replace(key, chr(value))
