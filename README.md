@@ -11,7 +11,7 @@ Alternatively, you can import the following functions separately: `beta_to_copti
 ```python
 # Greek
 print(beta_to_greek("*A)RIS1TOTE/LHS")) # Ἀριστοτέλης
-print(greek_to_beta("Ἀριστοτέλης")), # *A)RIS1TOTE/LHS2
+print(greek_to_beta("Ἀριστοτέλης")) # *A)RIS1TOTE/LHS2
 
 # Coptic
 print(beta_to_coptic("*PTOLEMAIOS")) # Ⲡⲧⲟⲗⲉⲙⲁⲓⲟⲥ
