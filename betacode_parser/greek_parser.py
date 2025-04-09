@@ -11,7 +11,7 @@ def greek_to_beta(text):
 def beta_to_greek(text):
     text += ' ' # Handle final sigma case
     text = _re.sub(r'(S)(\s+)', r'S2\2', text)
-    text = _re.sub(r'S(?=[.!?#:])', r'S2\2', text)
+    text = _re.sub(r'(S)(?=[.!?#:])', r'\1S2', text)
 
     # Replace capital letters first
     for key, value in _greek_capitals.items():
